@@ -1,4 +1,4 @@
-![image](https://github.com/kawaiiineko-website/pfsense-carp/assets/118014015/9315778a-637c-48c5-94eb-6daa8d03e291)# Faire du CARP avec PFSENSE
+# Faire du CARP avec PFSENSE
 Tutoriel pour faire du CARP avec PFSENSE.
 
 ## Etape 1
