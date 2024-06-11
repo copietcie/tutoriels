@@ -62,6 +62,21 @@ Configuration Vhost :
  apachectl -t
  systemctl reload apache2
 ```
+Vhost complet sécurisé (pour le 80): 
+```
+<VirtualHost *:80>
+        ServerName glpi.interne.fr
+        DocumentRoot /var/www/html/glpi/public
+        <Directory /var/www/html/glpi/public>
+                Require all granted
+                RewriteEngine On
+                RewriteCond %{REQUEST_FILENAME} !-f
+                RewriteRule ^(.*)$ index.php [QSA,L]
+        </Directory>
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+```
 Configuration BDD : 
 ```
  mysql -u root -p
