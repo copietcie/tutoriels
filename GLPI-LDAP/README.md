@@ -87,9 +87,29 @@ Configuration BDD :
 ## Etape 4
 Ajout SSL + forcer le SSL
 ```
-mkdir /etc/apache2/certs && chown -R www-data:www-data /etc/apache2/certs
-openssl XXXX
+mkdir /etc/apache2/certs
+openssl req -new -newkey rsa:2048 -days 365 -nodes -x509 -keyout glpi.key -out glpi.crt
+chown -R www-data:www-data /etc/apache2/certs
 ```
+
+Activer le module apache de SSL puis créer un vhost ssl ou éditer celui existant pour écouter sur le port 443 : 
+
+```
+a2enmod ssl
+```
+```
+<VirtualHost *:443>
+        SSLEngine on
+        SSLCertificateFile      /etc/apache2/certs/glpi.crt
+        SSLCertificateKeyFile   /etc/apache2/certs/glpi.key
+</VirtualHost>
+```
+```
+systemctl restart apache2
+```
+
+
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/c85e340b-0e04-476a-8eeb-940747809e71)
 
 ## Etape 5
 Activer l'authentification LDAP 
