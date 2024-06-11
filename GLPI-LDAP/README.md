@@ -7,15 +7,40 @@ Depuis la VM, télécharger l'archive après avoir récupérer le lien pointant 
 cd /tmp
 wget https://github.com/glpi-project/glpi/releases/download/10.0.15/glpi-10.0.15.tgz
 tar xzvf glpi-X.Y.Z.tgz
+mv glpi /var/www/html/glpi
+chown -R www-data:www-data /var/www/html
 ```
 ## Etape 2 
 Installation du serveur LAMP + PHP pré-requis: 
 ```
  apt-get install -y apache2 mariadb-server php
+ mysql_secure_installation
  apt-get install -y php-mysqli php-dom php-simplexml php-xmlreader php-xmlwriter php-curl php-gd php-intl php-ldap php-bz2 php-zip php-mbstring
 ```
 ## Etape 3
-Installation du serveur LAMP + PHP pré-requis: 
+Configuration php : 
+```
+ nano /etc/php/8.2/apache2/php.ini
+```
+changer la variable session.cookie_httponly à "on"
+```
+ session.cookie_httponly = on
+```
+Configuration Vhost : 
+```
+ cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/glpi.conf
+ a2dissite 000-default.conf
+ a2ensite glpi.conf
+ apachectl -t
+ systemctl reload apache2
+```
+Configuration BDD : 
+```
+ mysql -u root -p
+ create database glpi_db;
+ create user 'glpi_db_user'@'%' identified by 'the_password123!';
+ grant all privileges on glpi_db.* to 'glpi_db_user'@'%';
+```
 
 
 
