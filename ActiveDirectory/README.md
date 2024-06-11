@@ -3,5 +3,6 @@
 * Mettre une IP fixe à la VM
 * Ajouter le rôle ADDS
 
-## Etape 1
+## Faire un AD secondaire
+
 
