@@ -1,11 +1,25 @@
-# Faire du CARP avec PFSENSE
-Tutoriel pour faire du CARP avec PFSENSE.
+# Installation GLPI
+Tutoriel pour installer GLPI et mettre en place une authentification LDAP
 
 ## Etape 1
-Lancer Hyper-V, puis aller dans Gestionnaire de commutateur virtuel et faire 3 cartes réseaux (WAN, LAN et PFSYNC) en faisant "Nouveau commutateur réseau virtuel" : 
-* WAN : Choisir "Externe", le nommer et penser à autoriser le partage : ![image](https://github.com/kawaiiineko-website/pfsense-carp/assets/118014015/5bb1d1c6-20f9-4309-9a5b-6098f053e92d)
-* LAN : Choisir "Interne" , le nommer : ![image](https://github.com/kawaiiineko-website/pfsense-carp/assets/118014015/24cbe7b5-da69-4686-b03b-48da54346e2b)
-* PFSYNC : Choisir "Privé", le nommer : ![image](https://github.com/kawaiiineko-website/pfsense-carp/assets/118014015/44a59d34-18ae-4679-8c5a-32553d21cb60)
+Depuis la VM, télécharger l'archive après avoir récupérer le lien pointant sur le bouton : https://glpi-project.org/downloads/
+```
+cd /tmp
+wget https://github.com/glpi-project/glpi/releases/download/10.0.15/glpi-10.0.15.tgz
+tar xzvf glpi-X.Y.Z.tgz
+```
+## Etape 2 
+Installation du serveur LAMP + PHP pré-requis: 
+```
+ apt-get install -y apache2 mariadb-server php
+ apt-get install -y php-mysqli php-dom php-simplexml php-xmlreader php-xmlwriter php-curl php-gd php-intl php-ldap php-bz2 php-zip php-mbstring
+```
+## Etape 3
+Installation du serveur LAMP + PHP pré-requis: 
+
+
+
+
 
 Pourquoi externe et autoriser le partage ? => Cela permettra à la VM de se connecter sur le réseau externe et de récupérer un bail du serveur DHCP (mode bridge) => Cocher l'autorisation permet de partager la carte réseau aux VM
 Pourquoi interne ? => Cela permet de faire un réseau "interne" entre VM et l'hyperviseur (grâce à une carte réseau sur l'hyperviseur)
