@@ -84,5 +84,24 @@ Configuration BDD :
  create user 'glpi_db_user'@'%' identified by 'the_password123!';
  grant all privileges on glpi_db.* to 'glpi_db_user'@'%';
 ```
+## Etape 4
+Ajout SSL + forcer le SSL
+```
+mkdir /etc/apache2/certs && chown -R www-data:www-data /etc/apache2/certs
+openssl XXXX
+```
+
+## Etape 5
+Activer l'authentification LDAP 
+
+* Configuration > Authentification > Annuaire LDAP > + Ajouter
+* Ajouter un compte en Read Only sur l'AD pour GLPI
+* Mettre image de la conf
+* Connecter le serveur GLPI et le LDAP avec ce filtre :
+```
+(&(objectClass=user)(objectCategory=person)(!(userAccountControl:1.2.840.113556.1.4.803:=2)))
+```
+
+
 
 
