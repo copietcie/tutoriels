@@ -96,7 +96,8 @@ Activer l'authentification LDAP
 
 * Configuration > Authentification > Annuaire LDAP > + Ajouter
 * Ajouter un compte en Read Only sur l'AD pour GLPI
-* Mettre image de la conf
+* ![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/cd58c195-e938-480e-b210-1868d81f6adc)
+
 * Connecter le serveur GLPI et le LDAP avec ce filtre :
 ```
 (&(objectClass=user)(objectCategory=person)(!(userAccountControl:1.2.840.113556.1.4.803:=2)))
