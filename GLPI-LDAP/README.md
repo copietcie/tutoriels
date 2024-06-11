@@ -1,4 +1,4 @@
-![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/1837ae51-20d2-406b-bf5f-14d8f97c24e5)# Installation GLPI
+# Installation GLPI
 Tutoriel pour installer GLPI et mettre en place une authentification LDAP
 
 ## Etape 1
