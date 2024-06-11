@@ -1,4 +1,4 @@
-# Installation GLPI
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/1837ae51-20d2-406b-bf5f-14d8f97c24e5)# Installation GLPI
 Tutoriel pour installer GLPI et mettre en place une authentification LDAP
 
 ## Etape 1
@@ -102,6 +102,7 @@ Activer l'authentification LDAP
 ```
 (&(objectClass=user)(objectCategory=person)(!(userAccountControl:1.2.840.113556.1.4.803:=2)))
 ```
+Si ça ne sort rien, c'est que ça peut être un problème sur le filtre ou le champ de l'identifiant (uid peut être en non défini) alors passer à userprincipalname dans le champ "Champ de l'identifiant".
 
 
 
