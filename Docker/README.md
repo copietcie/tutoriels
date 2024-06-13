@@ -15,7 +15,7 @@ echo \
     tee /etc/apt/sources.list.d/docker.list > /dev/null
   apt-get update
 ```
-* Fichier d'installation de Portainer 
+* Fichier d'installation de Portainer (en stack avec Docker Compose)
 ```
 services:
   portainer:
@@ -30,3 +30,12 @@ services:
 volumes:
   portainer_data:
 ```
+Pour le lancer : 
+```
+docker compose -f <name_of_the_yml_file.yml> up -d
+```
+Pour check la conf du compose : 
+```
+docker compose -f <name_of_the_yml_file.yml> config
+```
+
