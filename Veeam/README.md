@@ -64,7 +64,7 @@ Continuer jusqu'à réussir.
 
 ### Création d'un job de sauvegarde
 * Aller dans "Home" > Clic droit et choisir "Virtual machine" **(Seulement si la partie au dessus a été faites)**
-* Sinon faire "Home" > Clic droit et choisir "WIndows MAchine"
+* Sinon faire "Home" > Clic droit et choisir "WIndows MAchine" ou "Linux Machine" (à adapter selon l'OS à sauver)
 
 * Sélectionner "Server" et "Managed by Backup Server"
 ![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/5dd79f43-4c06-48bc-8a96-1b07d8d28349)
