@@ -30,6 +30,11 @@ Installer un serveur Windows et l'ajouter au domaine
 Configuration de Veeam 
 * Un raccourcis sur le bureau doit être présent, il faut l'ouvrir
 ![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/05168ab5-949d-4934-86fc-ba24fb552299)
+* Il demande à quel serveur VBR on veut connecter, ici c'est le serveur lui même qui fait office de sauvegarde et console, donc laisser tout par défaut et mettre un compte apte à se connecter à ce serveur avec des droits administrateurs (ici Admin local mais un admin du domaine peut aussi) en cochant la case il est possible d'utiliser la session en cours pour lancer la console :
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/6a465034-50e1-400a-b5a7-a0e5400159ce)
+=> Si le serveur a été redémarré, ça prend un peu de temps à se relancer, donc attendre un peu avant de tenter une connexion
+* Par défaut, les sauvegardes sont stockés dans C:\Backup, il est possible de le changer :
+
 
 
 
