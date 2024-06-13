@@ -33,8 +33,43 @@ Configuration de Veeam
 * Il demande à quel serveur VBR on veut connecter, ici c'est le serveur lui même qui fait office de sauvegarde et console, donc laisser tout par défaut et mettre un compte apte à se connecter à ce serveur avec des droits administrateurs (ici Admin local mais un admin du domaine peut aussi) en cochant la case il est possible d'utiliser la session en cours pour lancer la console :
 ![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/6a465034-50e1-400a-b5a7-a0e5400159ce)
 => Si le serveur a été redémarré, ça prend un peu de temps à se relancer, donc attendre un peu avant de tenter une connexion
-* Par défaut, les sauvegardes sont stockés dans C:\Backup, il est possible de le changer :
 
+### Changement de repo de sauvegarde (FACULTATIF)
+* Par défaut, les sauvegardes sont stockés dans C:\Backup, il est possible de le changer :
+* Aller dans "Backup infrastructure" > Backup repository > Clic droit > Add "Backup Repository" > Choisir le type de disque (partage, sur une VM, etc..), un assistant s'ouvrira
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/e225ab7f-82b9-4664-8f92-2587c974108d)
+* Sélectionner le serveur de dépôt de sauvegarde (ici c'est la machine elle même, si c'est une autre machine faire "Add new" et suivre les instructions d'ajout) et faire "Populate" pour avoir les disques (ici on utilise E:\)
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/705ed91f-0953-48e4-837e-46a9f20e3945)
+* Donner l'endroit exact où on veut sauvegarder sur le disque (ici ça sera par défaut, mais utiliser "Browse" pour changer de répertoire) et adapter les paramètres "Concurrent task" = nb de tâche de sauvegarde en simultanées autorisées : 
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/9e0db7be-8564-42aa-9e39-469aedbfb779)
+* Ignorer la recommandation
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/33e5de0f-44b3-4a20-8839-5701e54a3fbd)
+* Décocher le vPowerNFS (permet de faire une sauvegarde instantanée pour les hyperviseurs VMWare, ici nous sommes sur Hyper V et ce n'est pas inclus)
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/974703ca-2f0b-49e9-b419-0ba0fa3358e7)
+* Laisser par défaut et Appliquer :
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/1f9ef45e-f6a2-477d-b58e-e5e178a0c9eb)
+* Regarder que tous les vvoyants sont verts :
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/277d769a-1cf7-4c84-a134-3c74f77d3ca1)
+* Confirmer le changement de répertoire de sauvegarde par défaut vers le nouveau répertoire créé :
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/b03d6263-5ac5-4a76-b283-0c11c5f79eb7)
+
+### Ajout de l'hyperviseur Hyper-V dans l'inventaire de sauvegarde (Facultatif)
+* Faire "Inventory" > Virtual Infrastructure > Add Server > Choisir "Microsoft Hyper V"
+* Sur l'assistant qui s'ouvre, ajouter l'IP ou le nom de la machine Hyper V (faire attention, vérifier que l'hyperviseur communique avec la VM Veeam, si c'est du réseau interne, il y a une carte réseau virtuelle qui peut être mis dans le même réseau que le réseau interne et si un DHCP est conf c'est auto)
+* On choisit "Standalone" car c'est un seul Hyper V
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/806baac3-6ff0-42b8-86c1-3de741e867eb)
+* Dans les credentials il faut mettre un utilisateur avec les droits administrateurs sur l'Hyper V (si l'hyper V n'est pas dans le domaine, mettre le compte local), faire "Add" pour en ajouter un utilisateur sous la forme NOM_PC_LOCAL\Utilisateur ou DOMAINE\Utilisateur)
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/7e8dae83-a766-47e6-bd83-e4d52d18918d)
+Continuer jusqu'à réussir.
+
+### Création d'un job de sauvegarde
+* Aller dans "Home" > Clic droit et choisir "Virtual machine" **(Seulement si la partie au dessus a été faites)**
+* Sinon faire "Home" > Clic droit et choisir "WIndows MAchine"
+
+* Sélectionner "Server" et "Managed by Backup Server"
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/5dd79f43-4c06-48bc-8a96-1b07d8d28349)
+* Nommer le job de backup
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/58a21e59-95c9-4e9e-9465-56a5a7e2b2c4)
 
 
 
