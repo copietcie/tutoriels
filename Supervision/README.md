@@ -1,4 +1,4 @@
-# Installation de Zabbi
+# Installation de Zabbix
 
 ## Etape 1
 
