@@ -110,5 +110,6 @@ Pour se faire :
 Exemple pour un fichier à restaurer (Clic droit > Restore > Overwrite ou Keep) : 
 ![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/f34aeca5-3ea7-4ac1-8fd7-736f65b4d679)
 * Possibilité de réécrire par dessus le fichier en production (Overwrite) ou bien de faire une "version 2" (keep) pour ne pas perdre la version actuelle
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/6d199c5a-5ceb-4f19-a50f-26c55a8aaa66)
 
 
