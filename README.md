@@ -1,5 +1,5 @@
 # Reste à faire 
-<code style="color : #FF0000">A faire</code>
+<code style="color:#FF0000">A faire</code>
 | Sujet  | Statut |
 | ------------- | ------------- |
 | Ouverture à l'extérieur  | <code style="color : #FF0000">A faire</code>  |
