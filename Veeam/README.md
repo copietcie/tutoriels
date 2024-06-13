@@ -70,6 +70,23 @@ Continuer jusqu'à réussir.
 ![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/5dd79f43-4c06-48bc-8a96-1b07d8d28349)
 * Nommer le job de backup
 ![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/58a21e59-95c9-4e9e-9465-56a5a7e2b2c4)
+* Ajouter la cible à sauvegarder et un compte administrateur qui a les droits dessus (un admin du domaine marche):
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/226f60b4-3178-45cd-b233-fc828da242f9)
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/73589b8c-dcdc-445a-be99-b9e6529218de)
+* Sélectionner le mode de sauvegarde (ici la sauvegarde ENTIERE de la VM est sélectionnée) :
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/a5c5606c-7dbd-4e4f-98a2-2b580214f3bb)
+* Choisir le répertoire de sauvegarde (qu'on avait mappé au début) puis la rétention (nb de jours où les sauvegardes sont gardés ou en points de restauration)
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/e31b2397-3922-4bbe-b033-e9b270b70a51)
+* Pour une meilleure personnalisation de la sauvegarde (incrémentielle / totale) on peut cliquer sur Advanced pour changer :
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/8e8c8508-0126-43a2-bd85-cae16acb9d3f)
+* Sur la fenêtre suivante, laisser la case cochée par défaut, on peut ajouter l'indexation de fichier et le scan de malware sur la sauvegarde (Attention on peut mettre une indexation sur tous les fichiers de la cible à sauvegarder)
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/0b717ccc-318a-4b4d-81d5-b67f78d2dedb)
+* Planifier le job de sauvegarde et dire après combien de fois il peut essayer si erreur :
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/42a4c004-05eb-4395-8ce6-c740d473890b)
+* Pour le test il est possible de forcer le job de sauvegarde en cochant "Run the job after closing"
+* Attendre un peu et si tout est OK, ça doit apparaître dans "Sucess"
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/0a761a81-df9c-4e32-a571-8a66c5a0eb5d)
+Sinon checker les erreurs et voir ce qui ne va pas
 
 
-
+### Restauration d'une sauvegarde (PRA)
