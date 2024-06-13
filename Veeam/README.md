@@ -4,7 +4,7 @@ Il est possible de sauvegarder 10 machines différentes en version CE et 1 tâch
 Minimum : 2CPU / 2048 Go
 
 ## Etape 1
-Récupérer l'ISO en s'inscrivant sur Veeam (VBR + Agent)
+Récupérer l'ISO en s'inscrivant sur Veeam (VBR)
 
 ## Etape 2
 Installer un serveur Windows et l'ajouter au domaine
