@@ -90,3 +90,25 @@ Sinon checker les erreurs et voir ce qui ne va pas
 
 
 ### Restauration d'une sauvegarde (PRA)
+* On peut faire une restauration d'une sauvegarde entière d'une VM
+* On peut égalemement avoir restaurer par exemple "une partie" comme un dossier et des fichiers particuliers (activer le file indexing sur tout au préalable)
+
+Pour se faire : 
+* Ouvrir Veeam & Backup Replication Console puis aller dans "Home" puis "Backups" et "Disks"
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/4015fc2b-6690-4acf-8397-c4bb4a17bad1)
+* Dans la partie de droite, déroulez le job souhaité (ici Backup_AD) puis cliquer droit sur le nom de la VM et choisir entre "Instant Recovery" |=> Il faut configurer la partie **Ajout de l'hyperviseur Hyper-V dans l'inventaire de sauvegarde (Facultatif)**] ou "Restore Guest file"
+* Instant recovery => Remet les données de la machine entière à l'état de la sauvegarde
+* Restore Guest File => Permet d'avoir de la granularité et de ne restaurer que ce qui est nécéssaire (exemple un fichier malencontreusement supprimé ou plusieurs)
+
+* Dans les deux cas, voici comment les premières étapes se déroulent :
+  * Choix de la sauvegarde à remonter
+  ![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/745d6785-d440-4e7f-b44c-84f249ff37b8)
+  * Donner une raison à la restauration (traçabilité)
+  ![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/eaac7575-33c6-4bd3-9c90-59b9a3dafc66)
+  * Faire "Restore" pour restaurer une VM entière ou "Browse" pour choisir un ou plusieurs fichiers à restaurer (granularité)
+
+Exemple pour un fichier à restaurer (Clic droit > Restore > Overwrite ou Keep) : 
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/f34aeca5-3ea7-4ac1-8fd7-736f65b4d679)
+* Possibilité de réécrire par dessus le fichier en production (Overwrite) ou bien de faire une "version 2" (keep) pour ne pas perdre la version actuelle
+
+
