@@ -1,14 +1,13 @@
 # Reste à faire 
-<code style="color:#FF0000">A faire</code>
 | Sujet  | Statut |
 | ------------- | ------------- |
-| Ouverture à l'extérieur  | <code style="color : #FF0000">A faire</code>  |
+| Reverse-proxy  | Déjà écris à envoyer  |
+| Https sous docker  | En cours  |
+| Nextcloud-LDAP  | En cours  |
+| Ouverture à l'extérieur  | A faire  |
 | DNS local et menteur  | A faire  |
-| Https sous docker  | A faire  |
 | Faire un lecteur par partagé nominatif sur une session RDP et un lecteur partagé commun  | A faire  |
 | Audit des évènements de modifs sur les fichier (GPO)  | A faire  |
-| Nextcloud-LDAP  | A faire  |
-| Reverse-proxy  | A faire  |
 | VPN IPSec  | A faire  |
 | Wordpress avec Ecommerce  | A faire  |
 | Zabbix  | A faire  |
