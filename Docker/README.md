@@ -69,6 +69,7 @@ volumes:
 Se rendre ensuite sur Nginx Proxy Manager en mode web (http://IP_DE_LA_VM_DOCKER:81) => Pas l'ip du conteneur la VM la COQUE
 * Mail par défaut : admin@example.com
 * Mot de passe par défaut : changeme
+
 On est directement amener à changer le mail et le mot de passe.
 
 Il n'aura que quelques confs comme la redirection vers les conteneurs en fonction du nom de domaine et l'ajout du SSL : 
