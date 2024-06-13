@@ -88,7 +88,7 @@ Configuration BDD :
 Ajout SSL + forcer le SSL
 ```
 mkdir /etc/apache2/certs
-openssl req -new -newkey rsa:2048 -days 365 -nodes -x509 -keyout glpi.key -out glpi.crt
+openssl req -new -x509 -days 365 -nodes -out /etc/apaches2/certs/glpi.crt -keyout /etc/apaches2/certs/glpi.key
 chown -R www-data:www-data /etc/apache2/certs
 ```
 
