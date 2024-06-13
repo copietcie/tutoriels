@@ -23,6 +23,13 @@ Installer un serveur Windows et l'ajouter au domaine
 * Les pré-requis sont en train d'être installé, il faut attendre un peu
 * Laisser tout par défaut et noter les ports pour autoriser au filtrage et faire "Install"
 ![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/e31c595e-1d20-4a9d-b74a-dfb2ca8c1609)
+* Quand l'installation s'est bien terminée :
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/3c82e855-2104-4f3c-97b6-a19aebd30522)
+
+## Etape 4
+Configuration de Veeam 
+* Un raccourcis sur le bureau doit être présent, il faut l'ouvrir
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/05168ab5-949d-4934-86fc-ba24fb552299)
 
 
 
