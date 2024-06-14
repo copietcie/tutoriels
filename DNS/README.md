@@ -1,10 +1,10 @@
 # DNS Menteur
 Le DNS menteur c'est le fait de modifier le fichier host d'un poste/machine afin de faire la résolution manuellement (sans serveur DNS)
 * Sur Windows :
-  * C:\Windows\System32\drivers\etc\hosts => A ouvrir avec Bloc Note ou Notepad en mode administrateur pour le modifier ou le copier quelque part pour le recoller par dessus dans le même endroit
+  * **C:\Windows\System32\drivers\etc\hosts** => A ouvrir avec Bloc Note ou Notepad en mode administrateur pour le modifier ou le copier quelque part pour le recoller par dessus dans le même endroit
   * Format : ```IP	DNS``` | ``` 172.16.181.224 nextcloud.myenterprise.com```
 * Sur les distributions Linux :
-  * /etc/resolv.conf, le modifier avec nano ou vim sous le compte root
+  * **/etc/resolv.conf**, le modifier avec nano ou vim sous le compte root
   * Format : ```IP       DNS ``` | ``` 127.0.1.1       docker-s6```
 
 # DNS Local
