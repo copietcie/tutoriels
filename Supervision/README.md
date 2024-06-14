@@ -86,3 +86,20 @@ en root
 ```
 systemctl restart zabbix-agent
 ```
+
+pour verifier
+```
+tail -f /var/log/zabbix/zabbix_agent2.conf
+nano /etc/hosts
+```
+
+## Etape 6
+Créer un tableau de bord. Sur l'interface graphique
+aller sur tableau de bord > créer un tableau de bord > donner un nom et appliquer
+
+ensuite cliquer sur la page blanche pour ajouter un widget puis 
+choisir le type 'par exemple graph (classique)
+sur le type graphique sélectionner et choisir ce que l'on veut (swap, CPU, RAM,... )
+
+
+
