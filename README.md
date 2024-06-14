@@ -8,6 +8,7 @@
 | Audit des évènements de modifs sur les fichier (GPO)  | A faire  |
 | VPN IPSec  | A faire  |
 | Wordpress avec accès limité au /wp-admin  | En cours  |
+| HAProxy  | En cours  |
 | ------------- | ------------- |
 | Reverse-proxy  | Fini  |
 | Ferme RDS  | Fini  |
