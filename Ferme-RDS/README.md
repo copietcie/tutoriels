@@ -65,6 +65,8 @@ Une fois que le certificat est installé sur l'ensemble des serveurs, il est tem
 ![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/7c902ad9-fa39-426f-ac61-6c650e7589f2)
 ![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/35755dbb-37ab-411e-be7b-50b1ea043748)
 ![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/6251aa75-d5a5-42cd-95a3-02c9b193f364)
+* On attérit bien sur le bon RDS
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/bd3a5093-ea2d-46c9-92e4-a4fa345a0872)
 
 
 
