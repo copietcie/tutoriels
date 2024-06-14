@@ -91,7 +91,7 @@ Il n'aura que quelques confs comme la redirection vers les conteneurs en fonctio
   * Générer au préalable un certificat SSL avec sa clé (faire un wildcard pour protéger tous les sous domaine d'un seul domaine, ça évitera d'avoir 600 certificats par domaine)
   * Se mettre dans une machine Linux et lancer cette commande pour générer une paire de certificat et de clé
   * ``` openssl req -new -x509 -days 365 -nodes -out _.myenterprise.com.crt -keyout _.myenterprise.com.key ```
-  * Afficher chaque fichier (_.myenterprise.com.crt && _.myenterprise.com.key) puis faire un fichier sur le Windows avec le même nom et le même contenu (```cat _.myenterprise.com.crt``` & ```cat _.myenterprise.com.key```)
+  * Afficher chaque fichier (_.myenterprise.com.crt && _.myenterprise.com.key) puis faire un fichier sur le Windows avec le même nom et le même contenu (```cat _.myenterprise.com.crt``` & ```cat _.myenterprise.com.key```) sinon faire du scp
   * Aller dans **SSL Certificate** > **Add SSL Certificate** > **Custom**
   * Donner un nom arbitraire pour le certificat
   * Choisir le fichier de certificat SSL et sa clé associée
