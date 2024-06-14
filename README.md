@@ -3,7 +3,7 @@
 | ------------- | ------------- |
 | Https sous docker  | En cours  |
 | Nextcloud-LDAP  | En cours  |
-| Zabbix  | En cours  |
+| Zabbix  | Fini |
 | Ouverture à l'extérieur  | A faire  |
 | DNS local et menteur  | A faire  |
 | Faire un lecteur par partagé nominatif sur une session RDP et un lecteur partagé commun  | A faire  |
