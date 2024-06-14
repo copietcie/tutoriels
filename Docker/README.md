@@ -96,3 +96,38 @@ Il n'aura que quelques confs comme la redirection vers les conteneurs en fonctio
   * Donner un nom arbitraire pour le certificat
   * Choisir le fichier de certificat SSL et sa clé associée
 
+# Nextcloud
+```
+volumes:
+  nextcloud:
+  db:
+
+services:
+  db:
+    image: mariadb:latest
+    restart: always
+    command: --transaction-isolation=READ-COMMITTED --log-bin=binlog --binlog-format=ROW
+    volumes:
+      - db:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_PASSWORD=password
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud_db
+
+  nextcloud:
+    image: nextcloud:latest
+    restart: always
+    ports:
+      - 8080:80
+    links:
+      - db
+    volumes:
+      - nextcloud_data:/var/www/html
+      - nextcloud_apache:/etc/apache2/
+    environment:
+      - MYSQL_PASSWORD=password
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud_db
+      - MYSQL_HOST=db
+```
