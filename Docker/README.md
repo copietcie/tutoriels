@@ -170,3 +170,13 @@ volumes:
   wordpress_apache:
   db_wordpress_data:
 ```
+
+## Mettre le Nextcloud en extérieur
+* Mettre un port personnalisés sur PF et désactiver la webConfiguration redirect
+* Faire une règle de **Port Forward** à destination de l'adresse WAN du PF et le port 80/443 puis le rediriger vers la machine Docker en port 80/443
+* Faire du DNS Menteur pour le WAN couplé à du DNS local sur l'AD pour les machines à l'intérieur
+
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/2b28b5d3-2a6f-41a6-b19a-4c62f8f550cb)
+
+
+## Docker Swarm
