@@ -1,5 +1,5 @@
-# Installation de Portainer avec Docker Compose
-* Script d'installation de Docker
+# Docker
+## Script d'installation de Docker
 ```
 #!/bin/bash
 # Add Docker's official GPG key:
@@ -24,7 +24,7 @@ docker run hello-world
 Ce message = On peut passer à la suite : 
 ![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/6a49fb4f-1970-49bb-8236-4a78c57c1891)
 
-* Fichier d'installation de Portainer (en stack avec Docker Compose)
+## Fichier d'installation de Portainer (en stack avec Docker Compose)
 ```
 services:
   portainer:
@@ -53,7 +53,7 @@ Se rendre ensuite sur Portainer Web UI (https://IP_DE_LA_VM_DOCKER:9443) => Pas 
 
 
 
-Fichier d'installation de Nginx Proxy Manager (en stack avec Docker Compose)
+## Fichier d'installation de Nginx Proxy Manager (en stack avec Docker Compose)
 ```
 services:
   nginx_proxy_manager:
@@ -95,20 +95,20 @@ Il n'aura que quelques confs comme la redirection vers les conteneurs en fonctio
   * Aller dans **SSL Certificate** > **Add SSL Certificate** > **Custom**
   * Donner un nom arbitraire pour le certificat
   * Choisir le fichier de certificat SSL et sa clé associée
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/4afa3242-a96e-4544-8f3d-8da28656ea45)
+  * Ajouter ensuite le certificat sur les **Proxy Host**
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/668092e3-9906-414b-a7ec-6405907b6182)
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/660c6040-830f-4f01-a502-21a034c1cd6c)
 
-# Nextcloud
+## Nextcloud
 ```
-volumes:
-  nextcloud:
-  db:
-
 services:
-  db:
+  db_nextcloud:
     image: mariadb:latest
     restart: always
     command: --transaction-isolation=READ-COMMITTED --log-bin=binlog --binlog-format=ROW
     volumes:
-      - db:/var/lib/mysql
+      - db_nextcloud_data:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=password
       - MYSQL_PASSWORD=password
@@ -119,9 +119,10 @@ services:
     image: nextcloud:latest
     restart: always
     ports:
-      - 8080:80
+      - 10003:80
+      - 10004:443
     links:
-      - db
+      - db_nextcloud
     volumes:
       - nextcloud_data:/var/www/html
       - nextcloud_apache:/etc/apache2/
@@ -129,5 +130,43 @@ services:
       - MYSQL_PASSWORD=password
       - MYSQL_DATABASE=nextcloud
       - MYSQL_USER=nextcloud_db
-      - MYSQL_HOST=db
+      - MYSQL_HOST=db_nextcloud
+volumes:
+  nextcloud_data:
+  nextcloud_apache:
+  db_nextcloud_data:
+```
+
+## Wordpress
+```
+services:
+  wordpress:
+    image: wordpress:latest
+    restart: always
+    ports:
+      - 10001:80
+      - 10002:443
+    environment:
+      WORDPRESS_DB_HOST: db_wordpress
+      WORDPRESS_DB_USER: wordpress_db
+      WORDPRESS_DB_PASSWORD: password
+      WORDPRESS_DB_NAME: wordpressdb
+    volumes:
+      - wordpress_data:/var/www/html
+      - wordpress_apache:/etc/apache2
+  db_wordpress:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_DATABASE: wordpressdb
+      MYSQL_USER: wordpress_db
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: password
+    volumes:
+      - db_wordpress_data:/var/lib/mysql
+
+volumes:
+  wordpress_data:
+  wordpress_apache
+  db_wordpress_data:
 ```
