@@ -48,6 +48,10 @@ Pour le lancer :
 docker compose -f <name_of_the_yml_file.yml> up -d
 ```
 Se rendre ensuite sur Portainer Web UI (https://IP_DE_LA_VM_DOCKER:9443) => Pas l'ip du conteneur la VM la COQUE
+* La première fois, il faut choisir le nom d'utilisateur et le mot de passe du compte administrateur de Portainer
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/106682a8-8e7e-49c7-8e42-b35bf740af4c)
+
+
 
 Fichier d'installation de Nginx Proxy Manager (en stack avec Docker Compose)
 ```
