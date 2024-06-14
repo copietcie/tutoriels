@@ -167,6 +167,6 @@ services:
 
 volumes:
   wordpress_data:
-  wordpress_apache
+  wordpress_apache:
   db_wordpress_data:
 ```
