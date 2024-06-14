@@ -78,4 +78,21 @@ On est directement amener à changer le mail et le mot de passe.
 
 Il n'aura que quelques confs comme la redirection vers les conteneurs en fonction du nom de domaine et l'ajout du SSL : 
 * Redirection :
-  *  
+  *  Faire Hosts > Proxy Hosts
+  ![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/7629f60a-80c2-40d0-80b9-e6215445850f)
+  *  Faire Add Proxy
+    * **Domain Names** : Choisir le nom de domaine pour le conteneur désiré
+    * **Scheme** : Choisir si c'est http ou https
+    * **Forward Hostname / IP** : Choisir l'IP du conteneur, ou son IP Gateway ou le nom du conteneur
+    * **Forward Ports** : Choisir le port du HTTP ou HTTPS sur lequel le conteneur écoute
+    * Activer le **Websocket Support**
+    * Mettre **Publicy Accessible**
+* SSL
+  * Générer au préalable un certificat SSL avec sa clé (faire un wildcard pour protéger tous les sous domaine d'un seul domaine, ça évitera d'avoir 600 certificats par domaine)
+  * Se mettre dans une machine Linux et lancer cette commande pour générer une paire de certificat et de clé
+  * ``` openssl req -new -x509 -days 365 -nodes -out _.myenterprise.com.crt -keyout _.myenterprise.com.key ```
+  * Afficher chaque fichier (_.myenterprise.com.crt && _.myenterprise.com.key) puis faire un fichier sur le Windows avec le même nom et le même contenu (```cat _.myenterprise.com.crt``` & ```cat _.myenterprise.com.key```)
+  * Aller dans **SSL Certificate** > **Add SSL Certificate** > **Custom**
+  * Donner un nom arbitraire pour le certificat
+  * Choisir le fichier de certificat SSL et sa clé associée
+
