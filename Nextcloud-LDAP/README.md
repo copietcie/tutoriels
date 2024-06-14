@@ -37,7 +37,7 @@ Vérifier que les utilisateurs et les groupes sont bien remontés :
 
 
 
-
+**Source : https://docs.nextcloud.com/server/latest/admin_manual/configuration_user/user_auth_ldap.html**
 
 
 
