@@ -39,4 +39,37 @@ quit;
 Puis prendre la suite du descriptif
 
 ## Etape 4
-Paramétrage
+Paramétrage : joindre l'interface graphique en tapant <@IP>/zabbix sur un moteur de recherche
+
+dans "collecte de données" > "hôtes" "créer un hôte" 
+
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/172619483/3b3093a6-6dbd-4b32-b89e-a8ab9b5678ff)
+
+nom de l'hôte mettre le nom de la machine "Debian-12" si doute taper "#lsb_release -a" sur la machine cible
+modele : cliquer sur selectionner puis selectionner "linux by zabbix agent"
+groupe d'hôte : cliquer sur selectionner puis selectionner "linux servers"
+pour l'interface cliquer sur ajouter > agent et mettre l'@IP de la machine à monitorer 
+
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/172619483/d3a15da9-fa91-468c-a8f2-3092df56a6e7)
+
+
+dans "collecte de données" > "modèles" 
+
+## Etape 5
+Sur la machine à monitorer, l'agent est installé
+aller dans /etc/zabbix/zabbix_agent2.conf
+mettre l'@IP de la machine à la place de l'@IP localhost
+
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/172619483/b0cfe4ef-58f1-472f-95cf-3e51bd3384de)
+
+mettre en commentaire l'@IP serveractive
+
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/172619483/bb702b6b-1ce5-4a27-92bb-41cb7a1c0ef3)
+
+mettre le nom de la machine à la place de hostname
+
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/172619483/905b866e-b98c-4f0a-8d85-6062759108b9)
+
+```
+systemctl restart zabbix-agent
+```
