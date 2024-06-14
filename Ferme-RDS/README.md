@@ -42,10 +42,29 @@
 ![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/dca45e8e-5207-4cd6-be0b-641ca839261e)
 
 ## Etape 4
-* Installer la passerelle RDS (Vue d'ensemble > Passerelle RDS > Cliquer dessus ça ouvre l'assistant > Lancer l'installation en sélectionnant le serveur puis en rajoutant son nom FQDN)
-![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/e962ae41-23f1-4c51-9c30-c8b76833e08d)
+* Installer la passerelle Gateway RDS
+* Se rendre dans "Gestionnaire de serveur" > "Service de bureau à distance" > "Vue d'ensemble" > "Tâche" > "Modifier les propriété de déploiement"
+* Sur la fenêtre qui s'ouvre descendre un peu et cliquer sur "Créer un certificat"
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/2dac6c30-9203-4fe2-841c-849062e8ea20)
+* Donner le nom FQDN du broker (trouvable sur le DNS de l'AD) et mettre un mot de passe (pour le certificat)
+* Stocker le certificat quelque part
+* Et cocher la case d'autorisation
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/9ba9721e-436a-4f4c-8b83-0e3c425a984c)
+
+* Mapper le certificat sur l'ensemble des serveurs (Broker et RDS) (Sélectionner un certificat existant > Parcourir et mettre le bon certificat et appliquer à chaque fois à la fin tout doit être en "OK")
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/1f27b71b-d5a2-443d-8543-d2ec985910fb)
 
 
+## Etape 5
+Une fois que le certificat est installé sur l'ensemble des serveurs, il est temps d'accéder au broker par un navigateur web pour avoir le bon raccourci : 
+* Se rendre sur le poste du client (Windows client joint dans le domaine)
+* Ouvrir un navigateur et taper "https://nom_de_domaine/Rdweb
+* Se connecter avec un compte dans le bon groupe (Compte ou informatique) et vérifier que c'est bien le bon raccourci qui est proposé à télécharger et ensuite lancer le raccourci et se connecter
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/d25a8b2e-ee66-4872-a66d-4d6ec8d73d15)
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/9b316a5a-ef60-497e-a6ce-325e13516e78)
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/7c902ad9-fa39-426f-ac61-6c650e7589f2)
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/35755dbb-37ab-411e-be7b-50b1ea043748)
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/6251aa75-d5a5-42cd-95a3-02c9b193f364)
 
 
 
