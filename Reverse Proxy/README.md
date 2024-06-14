@@ -1,13 +1,29 @@
-# DFS
-* Installer Espace de nom sur les serveurs AD
-* Installer DFS Réplication sur les cibles DFS (serveurs de fichiers)
-* Configurer un espace de nom avec des dossiers et la bonne arborescence sur l'AD 1
-* Configurer les dossiers partagés sur les cibles DFS
-* Configurer les cibles aux dossiers depuis l'AD 1
-* Configurer le groupe de réplication entre les deux cibles DFS
+# Nginx
+* Installer Nginx sur une machine Debian
+```
+apt-get update && apt-get install -y nginx
+```
 
-# Les droits
-* NTFS => Droit par défaut de Windows gérable dans l'onglet "Sécurité" d'un fichier/répertoire
-* Partage => Droit octroyé à un partage dans l'onglet "Partage" puis "Autorisation"
-Les droits les plus restrictifs sont appliqués, exemple : "Lecture pour tout le monde sur NTFS VS Modification pour tout le monde sur Partage" => C'est la lecture qui sera appliquée
 
+## Etape 2
+* Configuration /etc/nginx/sites-available/<nom_conf.conf>
+```
+upstream backend {
+    server IP
+    server IP2
+}
+server {
+    listen    80;
+    server_name    www.glpi-interne.fr;
+
+   location / {
+        include proxy_params;
+        proxy_pass http://glpi;
+    }
+}
+```
+=> le "upstream" est l'endroit où on indique les différents sites qui seront derrière le proxy
+=> server { c'est l'équivalent au vhost sur Apache, on dit que le proxy écoute sur le port 80 sur son ip et le nom de domaine à mettre pour le serveur derrière le proxy. La location / est nécessaire pour dire de faire la "redirection" vers le bon serveur par besoin de mettre l'IP ou le nom de domaine, il suffit de mettre le nom mis au "upstream"
+	- Activer la conf: ln -s /etc/nginx/sites-available/X.conf /etc/nginx/sites-enabled/X.conf
+	- Restart/reload : systemctl reload nginx
+Puis tester.
