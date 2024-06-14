@@ -44,7 +44,7 @@ Configuration de Veeam
 ![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/9e0db7be-8564-42aa-9e39-469aedbfb779)
 * Ignorer la recommandation
 ![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/33e5de0f-44b3-4a20-8839-5701e54a3fbd)
-* Décocher le vPowerNFS (permet de faire une sauvegarde instantanée pour les hyperviseurs VMWare, ici nous sommes sur Hyper V et ce n'est pas inclus)
+* Décocher le vPowerNFS (permet de faire des restaurations entière de VM pour les hyperviseurs VMWare, ici nous sommes sur Hyper V et ce n'est pas inclus)
 ![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/974703ca-2f0b-49e9-b419-0ba0fa3358e7)
 * Laisser par défaut et Appliquer :
 ![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/1f9ef45e-f6a2-477d-b58e-e5e178a0c9eb)
