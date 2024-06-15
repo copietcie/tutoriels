@@ -13,8 +13,8 @@ Filtrer le répertoire à certains postes par IP dans le VHOST
     SSLEngine on
     SSLCertificateFile /opt/certif/certificat.crt
     SSLCertificateKeyFile /opt/certif/certificat.key
-    <Directory /var/www/html/wp-*>
-      Require ip 192.168.0.5 127.0.0.1
+    <Directory /var/www/html/wordpress/wp-*>
+      Require ip X.Y.Z.A 127.0.0.1
       Require all denied
     </Directory>
     <Directory /var/www/html>
