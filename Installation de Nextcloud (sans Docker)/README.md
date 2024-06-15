@@ -134,4 +134,6 @@ On arrive sur la page d'installation où il faut indiquer des valeurs :
 * Les applications recommandées ne sont pas spécialement nécessaires et sont installables ultérieurement, les installer maintenant peut allonger le temps
 ![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/24188b5b-fe31-4f8b-b120-ebcb65e818f6)
 
+Pour faire du LDAP : https://github.com/kawaiiineko-website/tutoriels/tree/main/Configuration%20de%20l'authentification%20LDAP%20sur%20Nextcloud
+Plus de sources : https://docs.nextcloud.com/server/latest/admin_manual/installation/source_installation.html
 
