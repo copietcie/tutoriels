@@ -1,7 +1,6 @@
 # Reste à faire 
 | Sujet  | Statut |
 | ------------- | ------------- |
-| Ouverture à l'extérieur  | En cours  |
 | HAProxy  | En cours  |
 | Faire un lecteur partagé nominatif sur une session RDP et un lecteur partagé commun  | A faire  |
 | Audit des évènements de modifs sur les fichier (GPO)  | A faire  |
@@ -14,3 +13,4 @@
 | Cluster de base de données (MASTER/MASTER)  | A faire  |
 | Lecteur réseau nominatif lors d'une connexion RDP sur RDS  | A faire  |
 | Https sous docker  | <code>Fait</code>  |
+| Ouverture à l'extérieur  | <code>Fait</code>  |
