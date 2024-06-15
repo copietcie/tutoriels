@@ -10,6 +10,4 @@
 | Audit des évènements de modifs sur les fichier (GPO)  | A faire  |
 | VPN IPSec  | A faire  |
 | VPN SSL  | A faire  |
-| Installation de Nextcloud sans Docker  | A faire  |
-| ------------- | ------------- |
-| Zabbix  | Fini |
+| Installation de Nextcloud sans Docker  | Fini |
