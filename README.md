@@ -8,6 +8,6 @@
 | Audit des évènements de modifs sur les fichier (GPO)  | A faire  |
 | VPN IPSec  | A faire  |
 | VPN SSL  | A faire  |
-| Wordpress avec Ecommerce  | Fini  |
-| Wordpress avec accès limité au /wp-admin  | Fini  |
-| ```diff - Installation de Nextcloud sans Docker  ```| Fini |
+| Wordpress avec Ecommerce  | <code> Fini</code>  |
+| Wordpress avec accès limité au /wp-admin  | <code> Fini </code>  |
+| Installation de Nextcloud sans Docker | <code>Fini </code> |
