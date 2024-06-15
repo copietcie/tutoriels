@@ -6,7 +6,6 @@
 | Audit des évènements de modifs sur les fichier (GPO)  | A faire  |
 | VPN IPSec  | A faire  |
 | VPN SSL  | A faire  |
-| Serveur RDS (seul)  | A faire  |
 | Keepalived  | A faire  |
 | Fail2Ban sur SSH  | A faire  |
 | Simuler une surcharge sur un serveur Linux  | A faire  |
