@@ -3,7 +3,8 @@
 ## Etape 1 : Théorie
 Prenons ce réseau pour exemple :
 
-![example_ouverture_wan drawio](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/83c482c9-fe91-4004-8284-8c35aae6eab8)
+![Diagramme sans nom drawio](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/2c9418da-8336-492a-ac60-72b476ac4f2d)
+
 
 On remarque que : 
 * Le poste client et le serveur web ne sont pas sur le même réseau
