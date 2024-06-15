@@ -1,19 +1,25 @@
 # Bloquer le répertoire /wp-admin
-Filtrer le répertoire à certains postes 
-dans le fichier .htaccess placer dans /var/www/html/wp-admin
-
-copier le texte suivant
-(texte à adapter au contexte)
+Filtrer le répertoire à certains postes par IP dans le VHOST
 
 ```
-<Limit GET POST PUT>
-order deny,allow
-deny from all
-# IP d'Alex
-allow from xxx.xxx.xxx.xxx
-# IP de Nico
-allow from xxx.xxx.xxx.xxx
-# IP d'un autre point d'accès
-allow from xxx.xxx.xxx.xxx
-</Limit>
+<VirtualHost *:80>
+    Redirect permanent / https://www.domain.tld
+</VirtualHost>
+
+<VirtualHost *:443>
+    ServerName domain.tld
+    ServerAlias www.domain.tld
+    DocumentRoot /var/www/html
+    SSLEngine on
+    SSLCertificateFile /opt/certif/certificat.crt
+    SSLCertificateKeyFile /opt/certif/certificat.key
+    <Directory /var/www/html/wp-*>
+      Require ip 192.168.0.5 127.0.0.1
+      Require all denied
+    </Directory>
+    <Directory /var/www/html>
+      AllowOverride All
+      Require all granted
+    </Directory>
+</VirtualHost>
 ```
