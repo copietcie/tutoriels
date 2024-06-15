@@ -28,8 +28,17 @@ a2enmod ssl
 
 Editer le fichier vhost correspondant au site web à protéger et le faire écouter sur le port 443 : 
 ```
-
+<VirtualHost *:80>
+        Redirect permanent / https://nom_de_domaine.tld
+</VirtualHost>
+<VirtualHost *:443>
+        DocumentRoot /var/www/html
+        SSLEngine on
+        SSLCertificateFile      /etc/apache2/certs/<nom_arbitraire>.crt
+        SSLCertificateKeyFile   /etc/apache2/certs/<nom_arbitraire>.key
+</VirtualHost>
 ```
+=> Je fais toujours écouter le port 80 mais s'il reçoit une requête il u a une redirection vers la page en HTTPS pour forcer la sécurisation.
 
 Redémarrer Apache2 en vérifiant que la conf est bonne (pour éviter que ça ne redémarre plus) : 
 ```
