@@ -24,7 +24,7 @@ cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/wo
 ```
 
 Exemple du contenu : 
-
+```
 <VirtualHost *:80>
         ServerName wordpress.myenterprise.com
         ServerAlias www.wordpress.myenterprise.com
@@ -32,7 +32,7 @@ Exemple du contenu :
         ErrorLog ${APACHE_LOG_DIR}/error.log
         CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
-
+```
 ## Etape 3 
 Faire une base de données pour Wordpress : 
 ```
