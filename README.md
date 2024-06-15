@@ -14,6 +14,3 @@
 | Simuler une surcharge sur un serveur Linux  | A faire  |
 | Cluster de base de données (MASTER/MASTER)  | A faire  |
 | Lecteur réseau nominatif lors d'une connexion RDP sur RDS  | A faire  |
-| Wordpress avec Ecommerce  | <code> Fini</code>  |
-| Wordpress avec accès limité au /wp-admin  | <code> Fini </code>  |
-| Installation de Nextcloud sans Docker | <code>Fini </code> |
