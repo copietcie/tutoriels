@@ -27,6 +27,9 @@ Dans ce cas, les enregistrements doivent être fait dans ce serveur là afin de 
 ![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/5fd2fe8f-8ea4-4d0c-b039-8c3ec7bd0487)
 ![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/4a28a2d4-df49-47b9-a515-a7bdb4b2be7a)
 
+Penser à faire un enregistrement inverse (permet de résoudre une IP vers un nom de domaine) => ça sert pour la sécurité notamment pour les mails pour pas que ça passe en spam.
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/0c73fca0-63ab-40ac-9293-e8bb522d9846)
+
 
 
 
