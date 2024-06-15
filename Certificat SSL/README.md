@@ -44,5 +44,5 @@ systemctl status apache2
 
 ## Vérifier
 Se rendre sur le site en HTTPS et regarder que le certificat est bien pris en compte : 
-
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/5d0b7c7d-2b8e-45ff-b763-d00dae06e7c9)
 
