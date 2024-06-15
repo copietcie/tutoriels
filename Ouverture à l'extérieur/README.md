@@ -2,6 +2,7 @@
 
 ## Etape 1 : Théorie
 Prenons ce réseau pour exemple :
+
 ![example_ouverture_wan drawio](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/83c482c9-fe91-4004-8284-8c35aae6eab8)
 
 On remarque que : 
