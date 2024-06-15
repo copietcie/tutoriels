@@ -11,5 +11,6 @@
 | Simuler une surcharge sur un serveur Linux  | A faire  |
 | Cluster de base de données (MASTER/MASTER)  | A faire  |
 | Lecteur réseau nominatif lors d'une connexion RDP sur RDS  | A faire  |
+| Docker Swarm  | A faire  |
 | Https sous docker  | <code>Fait</code>  |
 | Ouverture à l'extérieur  | <code>Fait</code>  |
