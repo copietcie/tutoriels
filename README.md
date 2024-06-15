@@ -1,7 +1,6 @@
 # Reste à faire 
 | Sujet  | Statut |
 | ------------- | ------------- |
-| Https sous docker  | En cours  |
 | Ouverture à l'extérieur  | En cours  |
 | HAProxy  | En cours  |
 | Faire un lecteur partagé nominatif sur une session RDP et un lecteur partagé commun  | A faire  |
@@ -14,3 +13,4 @@
 | Simuler une surcharge sur un serveur Linux  | A faire  |
 | Cluster de base de données (MASTER/MASTER)  | A faire  |
 | Lecteur réseau nominatif lors d'une connexion RDP sur RDS  | A faire  |
+| Https sous docker  | <code>Fait</code>  |
