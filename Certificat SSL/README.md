@@ -32,10 +32,13 @@ Editer le fichier vhost correspondant au site web à protéger et le faire écou
         Redirect permanent / https://nom_de_domaine.tld
 </VirtualHost>
 <VirtualHost *:443>
+        ServerName www.nom_de_domaine.tld
         DocumentRoot /var/www/html
         SSLEngine on
         SSLCertificateFile      /etc/apache2/certs/<nom_arbitraire>.crt
         SSLCertificateKeyFile   /etc/apache2/certs/<nom_arbitraire>.key
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
 ```
 => Je fais toujours écouter le port 80 mais s'il reçoit une requête il u a une redirection vers la page en HTTPS pour forcer la sécurisation.
