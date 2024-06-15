@@ -36,4 +36,22 @@ Nous avons tout ça mais on ne communique toujours pas avec le serveur web...
 
 ## Etape 2 : Pratique
 * Maintenant, nous allons changer le port d'écoute WEB du second pare-feu (qui est généralement sur le 80 ou 443 pour pouvoir le configurer avec une interface web)
-* System > Advanced 
+* System > Advanced > Onglet Admin Access > Dans ```TCP Port``` mettre un nouveau port d'écoute pour le pare-feu, cocher ```Disable webConfigurator redirect rule``` pour éviter les mauvaises surprises de redirection vers le pare-feu au lieu du serveur web puis sauvegarder.
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/9afa9237-e1d6-46f1-9b56-b97a6ebcb4ca)
+
+Pour accéder au pare-feu à présent, il faudra taper son IP:PORT
+Ensuite : 
+* Aller dans ```Firewall``` puis ```NAT``` puis ```Port Forward``` et cliquer sur ```Add```
+Voilà les principaux champ à remplir :
+* **Interface** : l'interface sur laquelle la règle doit s'appliquer (généralement le WAN car c'est la porte d'entrée)
+* **Protocole** : TCP / UDP / ICMP...
+* **Destination** : Le premier bon, vers qui la requête arrive en premier (ici le second pare-feu)
+* **Destination Port Range** : Sur quel port ?
+* **Redirect target IP** : Vers quelle machine rediriger la requête ?
+* **Redirect target port** : Vers quel port ?
+
+Exemple de configuration par rapport à notre schéma : 
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/5229edeb-fd0c-4c18-9a8a-7caeb95f61f3)
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/432a2c8b-2776-480a-ad11-271cf77e7540)
+
+
