@@ -23,3 +23,7 @@ Filtrer le répertoire à certains postes par IP dans le VHOST
     </Directory>
 </VirtualHost>
 ```
+
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/59c4bf78-a1ba-41f9-8d33-e7e699f2d7df)
+![image](https://github.com/kawaiiineko-website/tutoriels/assets/118014015/e01b6809-a093-4cd4-b138-f95b5f9f43f1)
+
