@@ -2,8 +2,8 @@
 https://www.it-connect.fr/comment-monter-un-lecteur-reseau-par-gpo/
 
 # Méthode 1: Connecter un lecteur réseau en GPO
-Sur le serveur de fichier srv-fichier, créez un dossier Net-Admin et partagez ce dossier (Partage et Sécurité)\
-Suivez le lien d'instruction pour créer une mappage de lecture pour toutes les OU ou uniquement l'OU souhaitée, par exemple OU Net-Admin.\
+Sur le serveur de fichier srv-fichier, créez un dossier Net-Admin et partagez ce dossier (Partage et Sécurité-NTFS) --> [Différences permissions NTFS et de partage](https://www.it-connect.fr/serveur-de-fichiers-les-permissions-ntfs-et-de-partage/)\
+Suivez [le lien](https://www.it-connect.fr/comment-monter-un-lecteur-reseau-par-gpo/) d'instruction pour créer un mappage de lecture pour toutes les OU ou uniquement l'OU souhaitée, par exemple OU Net-Admin.\
 Supposons que vous ayez un utilisateur nommé Jean Dupont avec les informations suivantes :
 - Nom de compte : jdupont
 - Nom complet : Jean Dupont\
