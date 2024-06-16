@@ -3,7 +3,7 @@
 | ------------- | ------------- |
 | VPN SSL + LDAP | <code> Fait </code>  |
 | VPN IPSec  | A faire  |
-| Faire un lecteur partagé nominatif sur une session RDP et un lecteur partagé commun  | A faire  |
+| Faire un lecteur partagé nominatif sur une session RDP et un lecteur partagé commun  | <code> Fait </code>  |
 | HAProxy  | A faire  |
 | Audit des évènements de modifs sur les fichier (GPO)  | A faire  |
 | Keepalived  | A faire  |
