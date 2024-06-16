@@ -28,3 +28,4 @@ backend first
 
 ```systemctl restart haproxy```
 
+Source : https://phoenixnap.com/kb/haproxy-load-balancer
