@@ -3,7 +3,9 @@
 ## Etape 1
 
 Installer le paquet haproxy 
-```apt-get update && apt-get install haproxy```
+```
+apt-get update && apt-get install haproxy
+```
 
 ## Etape 2
 
