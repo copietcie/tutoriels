@@ -10,8 +10,8 @@ tcpdump -i hn0 -nn host 10.97.40.1 and icmp
 ```
 * nmap
 ```
-nmap -sU -p 123 217.19.48.80 (udp) 
-nmap -sT -p 123 217.19.48.80 (tcp) 
+nmap -sU -p 123 17.19.48.80 (udp) 
+nmap -sT -p 123 17.19.48.80 (tcp) 
 nmap -sn 10.131.80.0/24 (discover which hosts are up and running in the 10.131.80.0/24 subnet)
 ```
 Check port open/closed
@@ -32,6 +32,9 @@ PORT     STATE  SERVICE
 ```
 [root@linux:~]# netstat -nltup | grep 8080
 tcp        0      0 0.0.0.0:8080            0.0.0.0:*               LISTEN      30014/java
+
+[root@debian:~]#  netstat -ntlpu | grep "8080\|8081"
+
 ```
 
 # II. pfsense
