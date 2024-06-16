@@ -1,7 +1,7 @@
 # Reste à faire (Trier par ordre décroissant du plus important au moins)
 | Sujet  | Statut |
 | ------------- | ------------- |
-| VPN SSL + LDAP | A faire  |
+| VPN SSL + LDAP | <code> Fait </code>  |
 | VPN IPSec  | A faire  |
 | Faire un lecteur partagé nominatif sur une session RDP et un lecteur partagé commun  | A faire  |
 | HAProxy  | A faire  |
