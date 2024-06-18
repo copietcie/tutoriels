@@ -7,11 +7,6 @@ bash
 sudo apt update
 sudo apt install keepalived
 
-Sur les systèmes basés sur Red Hat/CentOS :
-
-bash
-
-sudo yum install keepalived
 
 2. Configuration de Base de Keepalived
 
@@ -183,12 +178,6 @@ bash
 sudo systemctl start keepalived
 sudo systemctl enable keepalived
 
-Sur Red Hat/CentOS :
-
-bash
-
-sudo systemctl start keepalived
-sudo systemctl enable keepalived
 
 4. Vérification et Dépannage
 
