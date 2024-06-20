@@ -67,6 +67,6 @@ taux de perte
 ![image](https://github.com/copietcie/tutoriels/assets/172619483/3683ff50-4b98-4ff8-80b2-9388adcf83a7)
 
 
-##Regle de dimenssionnement
+##Regle de dimensionnement
 
 Loi d'Erlang
