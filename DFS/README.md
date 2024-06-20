@@ -24,3 +24,13 @@ Les droits les plus restrictifs sont appliqués, exemple : "Lecture pour tout le
 <img width="581" alt="Capture d’écran 2024-06-20 111428" src="https://github.com/copietcie/tutoriels/assets/172619483/d60c1a8c-2bfb-401e-bb8a-baa0f0bd6bc1">
 
 <img width="825" alt="Capture d’écran 2024-06-20 111520" src="https://github.com/copietcie/tutoriels/assets/172619483/92de3998-cf19-49b3-aead-79272420e2c2">
+
+
+##Securité
+
+Authentification
+Confidentialité
+Intégrité
+Non répudiation de l'appel
+Non rejeu
+Anonymat
