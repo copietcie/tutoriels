@@ -34,3 +34,27 @@ Intégrité
 Non répudiation de l'appel
 Non rejeu
 Anonymat
+
+utilisation de Codec (opus)
+
+on separe par des VLAN dédiés
+
+##protocole
+
+SIP
+
+##QoS
+
+
+![image](https://github.com/copietcie/tutoriels/assets/172619483/00a4b6f9-7f28-4505-bf42-1e3c80f6ad4c)
+
+![image](https://github.com/copietcie/tutoriels/assets/172619483/044f9ded-b2f8-4c28-8904-931b5e12dd3c)
+
+![image](https://github.com/copietcie/tutoriels/assets/172619483/e1742509-1651-4f16-b01b-405666cc4436)
+
+![image](https://github.com/copietcie/tutoriels/assets/172619483/2bddb418-3ae8-4b7f-8ec8-9b58e8351ff0)
+
+![image](https://github.com/copietcie/tutoriels/assets/172619483/90c3a79a-bf6c-4b7d-a506-021fe0ea7208)
+
+![image](https://github.com/copietcie/tutoriels/assets/172619483/188401c4-7be3-4628-8b7a-ceb1e521333a)
+
