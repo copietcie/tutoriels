@@ -28,11 +28,11 @@ Les droits les plus restrictifs sont appliqués, exemple : "Lecture pour tout le
 
 ##Securité
 
-Authentification
-Confidentialité
-Intégrité
-Non répudiation de l'appel
-Non rejeu
+Authentification,
+Confidentialité,
+Intégrité,
+Non répudiation de l'appel,
+Non rejeu,
 Anonymat
 
 utilisation de Codec (opus)
@@ -44,6 +44,12 @@ on separe par des VLAN dédiés
 SIP
 
 ##QoS
+
+Gigue,
+bande passante,
+latence,
+priorité du trafic,
+taux de perte
 
 
 ![image](https://github.com/copietcie/tutoriels/assets/172619483/00a4b6f9-7f28-4505-bf42-1e3c80f6ad4c)
@@ -60,3 +66,7 @@ SIP
 
 ![image](https://github.com/copietcie/tutoriels/assets/172619483/3683ff50-4b98-4ff8-80b2-9388adcf83a7)
 
+
+##Regle de dimenssionnement
+
+Loi d'Erlang
